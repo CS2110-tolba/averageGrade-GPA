@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GPA Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="gpa">GPA Calculator</div>
+        <div class="typing">
+            <form action="">
+                <label for="Name">Name</label>
+                <input type="text" id="Name" value=""><br>
+
+                <label for="year1">First Year</label>
+                <input type="number" id="year1" value=""><br>
+
+                <label for="year2">Second Year</label>
+                <input type="number" id="year2" value=""><br>
+
+                <label for="year3">Third Year</label>
+                <input type="number" id="year3" value=""><br>
+
+                <label for="year4">Fourth Year</label>
+                <input type="number" id="year4" value=""><br>
+
+                <label for="year5">Fifth Year</label>
+                <input type="number" id="year5" value=""><br>
+            </form>
+        </div>
+        <div onclick="submit()" class="button">
+            <button>
+                Calculate
+            </button>
+        </div>
+        <div class="notification"> Waiting for your input ...</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
