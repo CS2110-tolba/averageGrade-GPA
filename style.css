@@ -108,10 +108,7 @@ body{
 {
     transform: scale(0.96);
 }
-.btn:hover
-{
-  background-color: rgb(124, 147, 225);
-}
+
 .p7
 {
     grid-column: 2/3;
@@ -121,6 +118,10 @@ body{
     font-size: 12px;
     font-family: sans-serif;
    
+}
+.hover
+{
+    background-color: #edb252;
 }
 .opacity
 {

@@ -29,7 +29,8 @@ btn.addEventListener("click",function()
      else 
      {
         input.style.backgroundColor = "#70ca9d";
-        btn.style.backgroundColor="#edb252"
+        btn.addEventListener("mouseenter",()=>{btn.classList.add('hover');});
+        btn.addEventListener("mouseout",()=>{btn.classList.remove('hover');});
         txt.classList.remove("opacity");
         txt.textContent = `Invalid GPA `;
          input.style.backgroundColor="red";
