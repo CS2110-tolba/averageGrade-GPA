@@ -1,7 +1,7 @@
 const name  = document.querySelector('#name')
 const years = document.getElementsByClassName('years')
 const btn   = document.getElementById('btn')
-const mess   = document.querySelector('#msg')
+const mess  = document.querySelector('#msg')
 
 
 
@@ -32,8 +32,14 @@ const mess   = document.querySelector('#msg')
   {
     document.querySelector('#msg').innerHTML = "Invaild In Year " + error
   }
-  else if()
+  else if(document.querySelector('#name').value == '')
+  {
+    document.querySelector('#name').style.backgroundColor = "red"
+    document.querySelector('#msg').innerHTML = "Write Your Name "
+  }
+  else
   {
     document.querySelector('#msg').innerHTML = "Hello " + document.getElementById('name').value + "! " + "Your GPA = " + gpa.toFixed(2)
+    document.querySelector('#name').style.backgroundColor = "#00ff00"
   }
 }
