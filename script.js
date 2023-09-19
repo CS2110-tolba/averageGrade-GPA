@@ -16,7 +16,7 @@ const mess   = document.querySelector('#msg')
     
     for(let i = 0; i < years.length;i++){
     
-    if(years[i].value > 5 || years[i].value == 0)
+    if(years[i].value > 5 || years[i].value == 0 || years[i].value < 0)
     {
       years[i].style.backgroundColor = "#ff0000"
       error = i + 1;
@@ -32,7 +32,7 @@ const mess   = document.querySelector('#msg')
   {
     document.querySelector('#msg').innerHTML = "Invaild In Year " + error
   }
-  else
+  else if()
   {
     document.querySelector('#msg').innerHTML = "Hello " + document.getElementById('name').value + "! " + "Your GPA = " + gpa.toFixed(2)
   }
