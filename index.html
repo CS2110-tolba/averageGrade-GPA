@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test-js</title>
+    <style>
+      body {
+        background-color: grey;
+        color: black;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-direction: column;
+      }
+      .box {
+        text-align: center;
+      }
+      #btn {
+        padding: 10px 15px;
+        background-color: lightblue;
+        outline: none;
+        border: none;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h3>Enter Your Name</h3>
+        <input type="text" id="Name" />
+      </div>
+      <div class="box">
+        <h3>Year 1</h3>
+        <input name="Year1" type="number" class="input" />
+      </div>
+      <div class="box">
+        <h3>Year 2</h3>
+        <input name="Year2" type="number" class="input" />
+      </div>
+      <div class="box">
+        <h3>Year 3</h3>
+        <input name="Year3" type="number" class="input" />
+      </div>
+      <div class="box">
+        <h3>Year 4</h3>
+        <input name="Year4" type="number" class="input" />
+      </div>
+      <div class="box">
+        <h3>Year 5</h3>
+        <input name="Year5" type="number" class="input" />
+      </div>
+      <input type="button" value="Calculate" id="btn" />
+      <div id="info"></div>
+      <script src="app.js" defer></script>
+    </div>
+  </body>
+</html>
